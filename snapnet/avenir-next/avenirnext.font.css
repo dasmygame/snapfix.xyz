@@ -1,0 +1,78 @@
+/* Fonts */
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("AvenirNext-UltraLight.ttf.txt") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("AvenirNext-UltraLightItalic.ttf.txt") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("AvenirNext-Regular.ttf.txt") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("AvenirNext-Medium.ttf.txt") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("AvenirNext-MediumItalic.ttf.txt") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("AvenirNext-DemiBold.ttf.txt") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("AvenirNext-DemiBoldItalic.ttf.txt") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("AvenirNext-DemiBold.ttf.txt") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("AvenirNext-DemiBoldItalic.ttf.txt") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("AvenirNext-Bold.ttf.txt") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("AvenirNext-BoldItalic.ttf.txt") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}

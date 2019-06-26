@@ -1,0 +1,704 @@
+
+
+
+<!DOCTYPE html>
+<html lang=en-US>
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+  <title>Safety Center &bull; Snapchat</title>
+
+  <!-- Style -->
+  <link rel="stylesheet" href="static/style-guide/styles/semantic.min.css"/>
+  <link rel="stylesheet" href="static/style-guide/styles/snapchat.css"/>
+
+  <!-- Scripts -->
+  <script src="static/style-guide/scripts/jquery-2.1.4.min.js"></script>
+  <script src="static/style-guide/scripts/jquery.cookie.js"></script>
+  <script src="static/style-guide/scripts/semantic.min.js"></script>
+  <script src="static/style-guide/home/scripts/jquery.scrollTo.min.js"></script>
+  <script async src="static/js/autotrack.js"></script>
+  <script src="static/js/google-analytics.js"></script>
+  <script src="static/js/country.js"></script>
+
+  <meta name="twitter:card" content="app">
+  <meta name="twitter:site" content="@Snapchat">
+  <meta name="twitter:description"
+        content="Life's more fun when you live in the moment! :) Download Snapchat for iOS and Android, and start Snapping with friends today.">
+  <meta name="twitter:app:id:iphone" content="447188370">
+  <meta name="twitter:app:id:ipad" content="447188370">
+  <meta name="twitter:app:id:googleplay" content="com.snapchat.android">
+
+  
+    <meta name="description" content="Snapchat is about self expression, so we all have a role in keeping Snapchat safe. Our guidelines, resources, and tips offer a great place to start learning.">
+    <meta name="keywords" content="Snapchat, Safety, Center">
+    <link rel="stylesheet" href="safety/safety.css" />
+    <script src="safety/safety.js"></script>
+
+
+  <link rel="shortcut icon" href="favicon-v=2015-10-02.ico"/>
+  <link rel="apple-touch-icon" sizes="100x100" href="static/assets/icon_100.png">
+
+  
+</head>
+<body class="state-yellow">
+  
+  <div style="height:46px;"><style>
+      .header-container {
+        position: fixed;
+        width: 100%;
+        font-size: 14px;
+        background-color: #FFFC00;
+        height: 46px;
+        line-height: 46px;
+        z-index: 1000;
+      }
+
+      .globalnav-container {
+        width: 92.3%;
+        max-width: 960px;
+        margin: auto;
+      }
+
+      .globalnav-container .globalnav-item {
+        margin-right: 24px;
+        display: inline;
+        padding: 2px;
+      }
+
+      .globalnav-container .globalnav-item:hover {
+        border-bottom: 2px solid rgba(38, 38, 38, 0.5);
+      }
+
+      .sc-header-selected-home .globalnav-home-link,
+      .sc-header-selected-create .globalnav-create-link,
+      .sc-header-selected-live .globalnav-live-link,
+      .sc-header-selected-snapcodes .globalnav-snapcodes-link,
+      .sc-header-selected-ads .globalnav-ads-link,
+      .sc-header-selected-download .globalnav-download-link {
+        border-bottom: 2px solid rgb(38, 38, 38);
+      }
+
+      .globalnav-container .globalnav-link {
+        color: rgb(38, 38, 38);
+        font-weight: 800;
+        text-decoration: none;
+        line-height: 25px;
+      }
+
+      .globalnav-container .globalnav-ghost-icon-link {
+        position: absolute;
+        top: 9px;
+      }
+
+      .globalnav-container .globalnav-home-link {
+        visibility: hidden;
+      }
+
+      .header-hamburger {
+        display: none;
+      }
+
+      .sc-header-replace-ghost-home-with-text .globalnav-container .globalnav-ghost-icon-link {
+        display: none;
+      }
+      .sc-header-replace-ghost-home-with-text .globalnav-container .globalnav-home-link {
+        visibility: inherit;
+      }
+      .sc-header-white .header-container,
+      .sc-header-white.header-container {
+        background-color: white;
+      }
+
+      @media (min-width: 768px) {
+        .sc-header-white .header-container,
+        .sc-header-white.header-container {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+      }
+
+      @media (max-width: 767px) {
+        .globalnav-container {
+          position: absolute;
+          top: 46px;
+          width: 100%;
+          border-top: 1px solid #D4D4D4;
+          border-radius: 2px;
+          max-height: 0;
+          transition: max-height .25s ease-in-out;
+          overflow: hidden;
+        }
+        .globalnav-container .globalnav-ghost-icon-link {
+          display: none;
+        }
+
+        .hamburger-expanded .globalnav-container {
+          border-bottom: 1px solid #D4D4D4;
+          max-height: 285px;
+        }
+
+        .globalnav-container .globalnav-home-link {
+          visibility: inherit;
+        }
+
+        /* a hover selector to overwrite desktop hover hightlight */
+        .globalnav-container .globalnav-item,
+        .globalnav-container .globalnav-item:hover {
+          display: block;
+          width: 100%;
+          padding: 0;
+          text-align: right;
+          background-color: white;
+          border-bottom: 1px solid #F8F9FB;
+        }
+
+        .globalnav-container .globalnav-item:hover {
+          background-color: #F8F9FB;
+        }
+
+        .globalnav-container .globalnav-item .globalnav-link {
+          display: block;
+          padding-right: 13px;
+          line-height: 46px;
+        }
+
+        .sc-header-selected-home .globalnav-home-link,
+        .sc-header-selected-create .globalnav-create-link,
+        .sc-header-selected-live .globalnav-live-link,
+        .sc-header-selected-snapcodes .globalnav-snapcodes-link,
+        .sc-header-selected-ads .globalnav-ads-link,
+        .sc-header-selected-download .globalnav-download-link {
+          background-color: #F8F9FB;
+        }
+
+        .header-hamburger {
+          display: block;
+          width: 20px;
+          height: 15px;
+          line-height: 15px;
+          position: relative;
+          top: 14px;
+          right: 15px;
+          float: right;
+          margin: 0;
+          transform: rotate(0deg);
+          cursor: pointer;
+        }
+
+        .header-hamburger span {
+          display: block;
+          position: absolute;
+          height: 2.5px;
+          width: 100%;
+          background: rgb(38, 38, 38);
+          box-sizing: border-box;
+          border-radius: 1px;
+          opacity: 1;
+          left: 0;
+          transform: rotate(0deg);
+          transition: .25s ease-in-out;
+          transition-property: transform, opacity;
+        }
+
+        .header-hamburger span:nth-child(1) {
+          top: 0px;
+          transform-origin: left center;
+        }
+
+        .header-hamburger span:nth-child(2) {
+          top: 6px;
+          transform-origin: left center;
+        }
+
+        .header-hamburger span:nth-child(3) {
+          top: 12px;
+          transform-origin: left center;
+        }
+
+        .hamburger-expanded .header-hamburger span:nth-child(1) {
+          transform: rotate(45deg) translateY(-1.5px);
+        }
+
+        .hamburger-expanded .header-hamburger span:nth-child(2) {
+          transform: scaleX(0);
+          opacity: 0;
+        }
+
+        .hamburger-expanded .header-hamburger span:nth-child(3) {
+          transform: rotate(-45deg) translateY(1px);
+        }
+      }
+    </style><div class="header-container"><div class="header-hamburger" id="headerHamburger"><span></span><span></span><span></span></div><div class="globalnav-container"><a href="index.html" class="globalnav-ghost-icon-link"><img src="static/style-guide/images/ghost/ghost.svg" alt="Snapchat" style="height:64px;"/></a><div class="globalnav-item globalnav-home-link"><a class="globalnav-link" href="index.html">Home</a></div><div class="globalnav-item globalnav-create-link"><a class="globalnav-link" href="create.html">Create</a></div><div class="globalnav-item globalnav-snapcodes-link"><a class="globalnav-link" href="https://scan.snapchat.com">Snapcodes</a></div><div class="globalnav-item globalnav-ads-link"><a class="globalnav-link" href="https://www.snapchat.com/ads">Ads</a></div><div class="globalnav-item globalnav-download-link"><a class="globalnav-link" href="download.html">Download</a></div><div class="globalnav-item globalnav-store-link"><a class="globalnav-link" href="https://store.snapchat.com">Store</a></div><div class="globalnav-item globalnav-lensstudio-link"><a class="globalnav-link" href="https://lensstudio.snapchat.com">Lens Studio</a></div></div></div></div>
+	
+
+<!-- Content -->
+<div id="content">
+  <div class="sc-container">
+
+    <header class="sc-header">
+      <h1 class="headline">Safety Center</h1>
+    </header>
+
+    <div class="video-container-wrapper">
+      <div class="video-container">
+        <iframe width="720" height="405" src="https://www.youtube.com/embed/6Blx6aafLl0?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="sc-container safety-content">
+
+    <div class="ui grid">
+      <div class="wide column subheader"><h2>Welcome!</h2><h2>Snapchat is a fast, fun way to share moments with friends and family. Most of our community uses Snapchat every day, so it isn't surprising that parents and teachers regularly ask us for advice.</h2></div>
+    </div>
+
+    <div class="ui mobile reversed grid stackable">
+      <div class="five wide column">
+
+        <div class="subnav">
+
+          <h4>Resources</h4>
+          <ul class="list">
+
+            
+              <li class="list-item">
+                <a class="action" href="https://www.snapchat.com/transparency" target=>
+                  <span class="title">Snapchat Transparency Report</span>
+                </a>
+              </li>
+            
+              <li class="list-item">
+                <a class="action" href="https://www.snapchat.com/lawenforcement" target=>
+                  <span class="title">Snapchat Law Enforcement Guide</span>
+                </a>
+              </li>
+            
+              <li class="list-item">
+                <a class="action" href="https://support.snapchat.com/" target=>
+                  <span class="title">Snapchat Support</span>
+                </a>
+              </li>
+            
+              <li class="list-item">
+                <a class="action" href="http://www.connectsafely.org/" target=_blank>
+                  <span class="title">ConnectSafely</span>
+                </a>
+              </li>
+            
+              <li class="list-item">
+                <a class="action" href="http://ikeepsafe.org/" target=_blank>
+                  <span class="title">iKeepSafe</span>
+                </a>
+              </li>
+            
+              <li class="list-item">
+                <a class="action" href="http://www.saferinternet.org.uk/" target=_blank>
+                  <span class="title">UK Safer Internet Centre</span>
+                </a>
+              </li>
+            
+              <li class="list-item">
+                <a class="action" href="http://www.netsmartz.org/" target=_blank>
+                  <span class="title">NetSmartz</span>
+                </a>
+              </li>
+            
+              <li class="list-item">
+                <a class="action" href="http://www.missingkids.org/cybertipline" target=_blank>
+                  <span class="title">CyberTipline</span>
+                </a>
+              </li>
+            
+              <li class="list-item">
+                <a class="action" href="https://www.suicidepreventionlifeline.org/" target=_blank>
+                  <span class="title">National Suicide Prevention Lifeline</span>
+                </a>
+              </li>
+            
+              <li class="list-item">
+                <a class="action" href="http://www.thetrevorproject.org/" target=_blank>
+                  <span class="title">The Trevor Project</span>
+                </a>
+              </li>
+            
+              <li class="list-item">
+                <a class="action" href="https://www.wearethorn.org/" target=_blank>
+                  <span class="title">Thorn</span>
+                </a>
+              </li>
+            
+
+          </ul>
+
+          <h4>News and Research</h4>
+          <ul class="list">
+
+            
+              <li class="list-item">
+                <a class="action" href="http://www.pewinternet.org/2016/01/07/parents-teens-and-digital-monitoring/" target="_blank">
+                  
+                  <span class="title">Parents, Teens and Digital Monitoring, Pew Research Center</span>
+                </a>
+              </li>
+            
+              <li class="list-item">
+                <a class="action" href="https://dash.harvard.edu/bitstream/handle/1/16145970/Berkman_2015-6_revised_4.1.pdf?sequence=1" target="_blank">
+                  
+                  <span class="title">Digitally Connected: Global Perspectives on Youth and Digital Media, The Berkman Center for Internet & Society at Harvard University</span>
+                </a>
+              </li>
+            
+              <li class="list-item">
+                <a class="action" href="https://homes.cs.washington.edu/~yoshi/papers/snapchat-FC2014.pdf" target="_blank">
+                  
+                  <span class="title">Sex, Lies, or Kittens? Investigating the Use of Snapchat’s Self-Destructing Messages, University of Washington</span>
+                </a>
+              </li>
+            
+              <li class="list-item">
+                <a class="action" href="http://www.pewinternet.org/2013/05/21/teens-social-media-and-privacy/" target="_blank">
+                  
+                  <span class="title">Teens, Social Media, and Privacy, Pew Research Center</span>
+                </a>
+              </li>
+            
+              <li class="list-item">
+                <a class="action" href="http://nms.sagepub.com/content/early/2014/07/19/1461444814543995.abstract" target="_blank">
+                  
+                  <span class="title">Networked privacy: How teenagers negotiate context in social media, Alice E Marwick and danah boyd</span>
+                </a>
+              </li>
+            
+
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="eleven wide column main-content">
+        <div class="safety-report">
+            <a href="https://support.snapchat.com/i-need-help?start=5153567363039232" target="_blank" class="safety-report-button">Report a safety concern</a>
+        </div>
+
+        <p>Together with our safety advisory board, some of the world’s leading safety advocates, we have developed guides for staying safe while using Snapchat. Within our safety center parents, teachers, and Snapchatters can find safety tips, research, and resources.</p>
+
+        <div class="safety-partners clearfix">
+
+            
+              <div class="partner connect-safely">
+                <a href="http://www.connectsafely.org/" target="_blank"><img src="static/assets/connect-safely.png" alt="Connect Safely" /></a>
+              </div>
+            
+              <div class="partner safe-internet">
+                <a href="http://www.saferinternet.org.uk/" target="_blank"><img src="static/assets/safe-internet.png" alt="Safer Internet" /></a>
+              </div>
+            
+              <div class="partner ikeepsafe">
+                <a href="http://www.ikeepsafe.org/" target="_blank"><img src="static/assets/ikeepsafe.png" alt="iKeepSafe" /></a>
+              </div>
+            
+              <div class="partner net-family-news">
+                <a href="http://www.netfamilynews.org/" target="_blank"><img src="static/assets/net-family-news.png" alt="Net Family News" /></a>
+              </div>
+            
+              <div class="partner thorn">
+                <a href="https://www.wearethorn.org/" target="_blank"><img src="static/assets/thorn.png" alt="Thorn - Digital Defenders of Children" /></a>
+              </div>
+            
+              <div class="partner net-smartz">
+                <a href="http://www.netsmartz.org/Parents" target="_blank"><img src="static/assets/net-smartz.png" alt="NetSmartz" /></a>
+              </div>
+            
+
+        </div>
+
+        <div class="article-image">
+            <h2>Community Guidelines</h2>
+            <img src="static/assets/safety-section-images-1.jpg" id='community-image' alt="Community Guidelines">
+        </div>
+
+        <article class="safety-article">
+          <h2>Community Guidelines</h2>
+
+          
+            <p><strong>We all have a role to play to keep Snapchat safe</strong></p>
+          
+            <p>Our <a href="https://support.snapchat.com/a/guidelines" target="_blank">Community Guidelines</a> encourage Snapchatters to be thoughtful about what they Snap.</p>
+          
+            <p>Our goal is to accommodate the broadest range of self expression, while giving Snapchatters a safe and enjoyable experience.</p>
+          
+
+          <br>
+        </article>
+
+        <div class="article-image">
+            <h2>Safety Tips</h2>
+            <img src="static/assets/safety-section-images-2.jpg" id="safety-image" alt="Safety Tips">
+        </div>
+        <article class="safety-article">
+          <h2>Safety Tips</h2>
+
+          
+            <p><strong>Safety tips and resources:</strong></p>
+          
+            <p>Staying safe on Snapchat is everyone's responsibility.</p>
+          
+
+          <ol>
+            
+              <li>Be kind and respectful. Be thoughtful about what you Snap and don't send people things they don't want to receive.</li>
+            
+              <li>Remember, anyone can take a screenshot of a Snap, or simply use another camera to take a picture of a Snap that appears on their screen.</li>
+            
+              <li>Check your <a href="https://support.snapchat.com/a/privacy-settings" target="_blank">privacy settings</a> to choose who can send you Snaps and view your Stories.</li>
+            
+              <li>If you experience harassment or bullying, <a href="https://support.snapchat.com/a/block-friends">block</a> the person and <a href="https://support.snapchat.com/co/harassment" target="_blank">report it</a> to us. Also, check out NetSmartz for <a href="http://www.netsmartz.org/Cyberbullying" target="_blank">information on cyberbullying</a>.</li>
+            
+              <li>Keep your password safe. Don't share your password with other people, applications, or websites. Use a different password for every service you use.</li>
+            
+              <li>Read our <a href="https://support.snapchat.com/a/guidelines" target="_blank">Community Guidelines</a> and help your friends follow them as well. If you experience something upsetting, let us know and tell a parent or trusted adult.</li>
+            
+              <li>We provide our Discover Publishers with tools that allow them to restrict some types of content from Snapchatters who are under the age of 18.</li>
+            
+          </ol>
+        </article>
+
+
+        <div class="article-image">
+            <h2>Parents and Teachers</h2>
+            <img src="static/assets/safety-section-images-3.jpg" id="parents-image" alt="">
+        </div>
+        <article class="safety-article">
+          <h2>Parents and Teachers</h2>
+
+          
+            <p><strong>Advice for parents and teachers</strong></p>
+          
+            <p>Snapchat is for sharing moments with friends -- through Snaps, Chats and Stories. Because Snapchat is an important way many young people communicate, parents and teachers should talk with them about how they’re using Snapchat. Please note that Snapchat is not intended for children under the age of 13.</p>
+          
+            <p>Asking questions and talking about what’s appropriate to Snap are good first steps. Help your kids and students understand how and when to report issues, and encourage them to be good to their friends and responsible members of the Snapchat community.</p>
+          
+            <p><a class="line-link" href="https://storage.googleapis.com/sc-support-web/safety/parents-guide-en.pdf">A Parent's Guide to Snapchat</a></p>
+          
+        </article>
+      </div>
+
+    </div>
+    <img src="images/safety-center/safety_center_balloons.svg" height="277px" alt="Safety Center Balloons" class="safety-center-balloons" />
+    <img src="images/safety-center/safety_center_kites.svg" height="509px" alt="Safety Center Kitess"class="safety-center-kites" />
+  </div>
+</div>
+<!-- End Safety Content -->
+<div class="safety-center-footer"></div>
+
+
+	<div style="background-color:#F8F9FB;font-size:14px;line-height:17px;"><style>
+      .footer-container,
+      .footer-bottom-bar {
+        width: 92.3%;
+        max-width: 960px;
+        margin: auto;
+      }
+
+      .footer-container {
+        box-sizing: content-box;
+        position: relative;
+        padding: 30px 0 30px;
+        min-height: 195px;
+      }
+
+      .footer-container .footer-column {
+        position: relative;
+        box-sizing: border-box;
+        float: left;
+        width: 25%;
+        padding-right: 6.25%;
+      }
+
+      .footer-container .footer-column .footer-column-header {
+        box-sizing: content-box;
+        line-height: 23px;
+        font-weight: bold;
+      }
+
+      .footer-container .footer-column .footer-column-expand-caret {
+        display: none;
+      }
+
+      .footer-container .footer-column a {
+        display: table;
+        color: rgba(0, 0, 0, 0.4);
+        text-decoration: none;
+        line-height: 17px;
+        margin-top: 6px;
+      }
+      .footer-container .footer-column a:hover {
+        color: black;
+      }
+
+      .footer-container .langue-selection-block {
+        position: absolute;
+        box-sizing: border-box;
+        padding: 0 6.25% 15px 0;
+        bottom: 15px;
+        width: 25%;
+      }
+      .footer-container .langue-selection-block .langue-header {
+        font-weight: bold;
+      }
+
+      .footer-bottom-bar a {
+        line-height: 56px;
+        margin-right: 40px;
+        color: white;
+        text-decoration: none;
+      }
+
+      @media (max-width: 767px) {
+        .footer-container,
+        .footer-bottom-bar {
+          width: 100%;
+          padding: 0;
+          max-width: none;
+        }
+
+        .footer-container .footer-column {
+          padding: 0;
+          width: 100%;
+        }
+
+        .footer-container .footer-column a,
+        .footer-container .footer-column .footer-column-header {
+          margin-top: 0;
+          padding: 10px 40px;
+          width: calc(100% - 80px);
+          line-height: 25px;
+        }
+
+        .footer-container .footer-column .footer-column-header,
+        .footer-container .langue-selection-block {
+          border-top: solid 1px #D4D4D4;
+        }
+
+        .footer-container .footer-column .footer-column-header {
+          cursor: pointer;
+          background-color: white;
+        }
+
+        .footer-container .footer-column .footer-column-expand-caret {
+          display: block;
+          position: absolute;
+          left: 16px;
+          top: 15px;
+          width: 15px;
+          height: 20px;
+          transform-origin: 55% 45%;
+          cursor: pointer;
+        }
+        .footer-container .footer-column.expanded .footer-column-expand-caret {
+          transform: rotate(90deg);
+          -webkit-transform: rotate(90deg);
+        }
+
+        .footer-container .footer-column a {
+          font-weight: 600;
+          color: black;
+          border-top: solid 1px #E5E5E5;
+          display: none;
+        }
+        .footer-container .footer-column.expanded a {
+          display: block;
+          box-sizing: content-box;
+        }
+
+        .footer-container .langue-selection-block {
+          position: static;
+          width: 100%;
+          height: inherit;
+          top: inherit;
+          padding: 14px 20px 15px;
+        }
+
+        .footer-bottom-bar a {
+          display: block;
+          line-height: 45px;
+          margin-right: 0;
+          padding-left: 20px;
+          border-bottom: solid 1px #D4D4D4;
+        }
+      }
+    </style><div class="footer-container" id="footerContainer"><div class="footer-column"><div class="footer-column-expand-caret"><svg width="15" height="20"><g><rect stroke="#000" transform="rotate(45 0,0)" rx="1" id="1" height="1.5" width="10" y="-2" x="5" stroke-width="1"></rect><rect stroke="#000" transform="rotate(-45 0,0)" rx="1" id="2" height="1.5" width="10" y="13.5" x="-8" stroke-width="1"></rect></g></svg></div><div class="footer-column-header">Company</div><div><a href="https://www.snap.com/en-US/">Snap Inc.</a><a href="https://www.snap.com/en-US/jobs/">Jobs</a><a href="https://www.snap.com/en-US/news/">News</a></div></div><div class="footer-column"><div class="footer-column-expand-caret"><svg width="15" height="20"><g><rect stroke="#000" transform="rotate(45 0,0)" rx="1" id="1" height="1.5" width="10" y="-2" x="5" stroke-width="1"></rect><rect stroke="#000" transform="rotate(-45 0,0)" rx="1" id="2" height="1.5" width="10" y="13.5" x="-8" stroke-width="1"></rect></g></svg></div><div class="footer-column-header">Community</div><div><a href="https://support.snapchat.com/">Support</a><a href="https://support.snapchat.com/a/guidelines">Community Guidelines</a><a href="safety.html">Safety Center</a></div></div><div class="footer-column"><div class="footer-column-expand-caret"><svg width="15" height="20"><g><rect stroke="#000" transform="rotate(45 0,0)" rx="1" id="1" height="1.5" width="10" y="-2" x="5" stroke-width="1"></rect><rect stroke="#000" transform="rotate(-45 0,0)" rx="1" id="2" height="1.5" width="10" y="13.5" x="-8" stroke-width="1"></rect></g></svg></div><div class="footer-column-header">Advertising</div><div><a href="https://www.snapchat.com/ads">Buy Ads</a><a href="https://www.snap.com/en-US/ad-policies/">Advertising Policies</a><a href="https://www.snap.com/en-US/brand-guidelines/">Brand Guidelines</a><a href="https://support.snapchat.com/a/promotions-rules">Promotions Rules</a></div></div><div class="footer-column"><div class="footer-column-expand-caret"><svg width="15" height="20"><g><rect stroke="#000" transform="rotate(45 0,0)" rx="1" id="1" height="1.5" width="10" y="-2" x="5" stroke-width="1"></rect><rect stroke="#000" transform="rotate(-45 0,0)" rx="1" id="2" height="1.5" width="10" y="13.5" x="-8" stroke-width="1"></rect></g></svg></div><div class="footer-column-header">Legal</div><div><a href="https://www.snap.com/en-US/privacy/privacy-center/">Privacy Center</a><a href="https://www.snap.com/en-US/cookie-policy/">Cookie Policy</a><a href="https://support.snapchat.com/co/report-copyright">Copyright</a><a href="https://www.snap.com/en-US/terms/custom-creative-tools/">Custom Creative Tools Terms</a><a href="https://www.snapchat.com/geofilters/terms.html">Community Geofilter Terms</a><a href="https://www.snap.com/en-US/terms/lens-studio-terms/">Lens Studio Terms</a></div></div><div style="clear:both;"></div><div class="langue-selection-block"><div class="langue-header">Language</div><div style="position:relative;"><select id="sc-global-locale-selector" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;border:1px solid #CCCCCC;border-radius:5px;background:white;width:100%;margin-top:10px;padding:5px 10px;font-size:14px;font-family:inherit;color:rgba(0, 0, 0, 0.6);height:34px;cursor:pointer;"><option selected="" value="en-US">English (US)</option><option value="da-DK">Dansk</option><option value="de-DE">Deutsch</option><option value="en-GB">English (UK)</option><option value="es">Español</option><option value="fr-FR">Français</option><option value="it-IT">Italiano</option><option value="nl-NL">Nederlands</option><option value="ja-JP">日本語</option><option value="nb-NO">Norsk</option><option value="pt-BR">Português (Brasil)</option><option value="fi-FI">Suomi</option><option value="sv-SE">Svenska</option></select><div style="position:absolute;right:10px;width:0;height:0;pointer-events:none;border-style:solid;bottom:18px;border-width:0 3px 5px 3px;border-color:transparent transparent #666666 transparent;"></div><div style="position:absolute;right:10px;width:0;height:0;pointer-events:none;border-style:solid;bottom:10px;border-width:5px 3px 0 3px;border-color:#666666 transparent transparent transparent;"></div></div></div></div><div style="background-color:#262626;"><div class="footer-bottom-bar"><a href="https://www.snap.com/en-US/privacy/privacy-policy/">Privacy Policy</a><a href="https://www.snap.com/en-US/terms/">Terms of Service</a><a href="https://support.snapchat.com/a/impressum" class="impressum">Impressum</a><div style="clear:both;"></div></div></div><div id="cookiePopupContainer"><style>
+      #cookiePopupContainer {
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        background: white;
+        bottom: 0;
+
+        font-size: 14px;
+        line-height: 17px;
+
+        transition: transform, box-shadow;
+        transition-duration: 500ms;
+        transition-timing-function: cubic-bezier(0,0,0,1), linear;
+        transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        box-shadow: 0 0 0 rgba(0,0,0,0.075);
+      }
+
+      #cookiePopupContainer.shown {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        box-shadow: 0 -1px 3px rgba(0,0,0,0.175);
+      }
+
+      #cookiePopupContainer #cookiePopupCloseButton {
+        position: absolute;
+        right: 30px;
+        top: calc(50% - 10px);
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        background-color: lightgray;
+        cursor: pointer;
+        transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        background: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20style%3D%22background-color%3A%20lightgray%3B%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2030%2030%22%3E%3Crect%20width%3D%223%22%20height%3D%2220%22%20x%3D%2213.5%22%20y%3D%225%22%20fill%3D%22%23FFF%22%20rx%3D%221%22%20ry%3D%221%22%3E%3C%2Frect%3E%3Crect%20width%3D%2220%22%20height%3D%223%22%20y%3D%2213.5%22%20x%3D%225%22%20fill%3D%22%23FFF%22%20rx%3D%221%22%20ry%3D%221%22%3E%3C%2Frect%3E%3C%2Fsvg%3E);
+      }
+
+      #cookiePopupContainer #cookiePopupCloseButton:hover {
+        background: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20style%3D%22background-color%3A%20gray%3B%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2030%2030%22%3E%3Crect%20width%3D%223%22%20height%3D%2220%22%20x%3D%2213.5%22%20y%3D%225%22%20fill%3D%22%23FFF%22%20rx%3D%221%22%20ry%3D%221%22%3E%3C%2Frect%3E%3Crect%20width%3D%2220%22%20height%3D%223%22%20y%3D%2213.5%22%20x%3D%225%22%20fill%3D%22%23FFF%22%20rx%3D%221%22%20ry%3D%221%22%3E%3C%2Frect%3E%3C%2Fsvg%3E);
+      }
+
+      #cookiePopupContainer .cookie-text {
+        padding: 28px 20px;
+        text-align: center;
+        margin-left: calc(10% + 210px);
+        margin-right: calc(10% + 210px);
+      }
+
+      @media (max-width: 1200px) {
+        #cookiePopupContainer .cookie-text {
+          margin-left: 3%;
+          margin-right: calc(3% + 40px);
+        }
+      }
+
+      @media (max-width: 1200px) {
+        #cookiePopupContainer .cookie-icon {
+          display: none;
+        }
+      }
+
+      @media print {
+        #cookiePopupContainer {
+          display: none;
+        }
+      }
+    </style><div class="cookie-icon cookie-icon-left" style="position:absolute;width:240px;height:120px;background-size:cover;left:calc(10% - 50px);top:calc(50% - 55px);background:url('home/cookie-1.svg') center center no-repeat;"></div><div class="cookie-popup"><div class="cookie-text">Hi! We use cookies on this website to help operate our site and for analytics purposes. For more on how we use cookies and your cookie choices, go <a href="https://www.snap.com/en-US/cookie-policy/" target="_blank">here</a>! By continuing to use our services, you are giving us your consent to use cookies.</div></div><div class="cookie-icon cookie-icon-right" style="position:absolute;width:240px;height:120px;background-size:cover;right:calc(10% - 50px);top:calc(50% - 50px);background:url('home/cookie-2.svg') center center no-repeat;"></div><div id="cookiePopupCloseButton"></div></div></div>
+
+</body>
+</html>
